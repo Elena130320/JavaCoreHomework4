@@ -18,6 +18,7 @@ public class WordArr {
 
     private HashMap<String, Integer> getMapWords(String[] arrayWord) {
         HashMap<String, Integer> mapWords = new HashMap<>();
+
         for (int i = 0; i < arrayWord.length; i++) {
             if (mapWords.containsKey(arrayWord[i])) {
                 mapWords.put(arrayWord[i], mapWords.get(arrayWord[i]) + 1);
