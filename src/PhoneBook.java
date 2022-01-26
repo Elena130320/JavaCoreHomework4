@@ -17,7 +17,7 @@ public class PhoneBook {
         phoneBook.put(name,phones);
     }
 
-    public Set<String> getPhonesByName (String name){
+    public Set<String> getPhoneName (String name){
         return phoneBook.get(name);
     }
 

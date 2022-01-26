@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         WordArr wordArr = new WordArr(newWords());
         wordArr.doArrayWord();
+        doPhoneBook();
 
 
     }
@@ -23,12 +24,18 @@ public class Main {
 
     }
 
-    public static void PhoneBook() {
+    public static void doPhoneBook() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.addPhone("Дима", "9031783456");
         phoneBook.addPhone("Вадим", "9269681234");
         phoneBook.addPhone("Андрей", "9212130987");
         phoneBook.addPhone("Даниил", "9100258789");
         phoneBook.addPhone("Дима", "9038596178");
+
+        System.out.println(phoneBook.getPhoneName("Дима") + " - Дима");
+        System.out.println(phoneBook.getPhoneName("Вадим") + " - Вадим");
+        System.out.println(phoneBook.getPhoneName("Андрей") + " - Андрей");
+        System.out.println(phoneBook.getPhoneName("Даниил") + " - Даниил");
+
     }
 }
